@@ -12,12 +12,12 @@ body {
   background:
     radial-gradient(circle at 10% 10%, rgba(255, 107, 53, 0.18), transparent 28rem),
     linear-gradient(135deg, #fff7ed, #ffffff 50%, #f4f7fb);
-  color: #1f1f1f;
+  color: #2b2b2b;
 }
 
 .login-page {
   display: grid;
-  grid-template-columns: minmax(320px, 480px) 1fr;
+  grid-template-columns: minmax(310px, 480px) 1fr;
   gap: 28px;
   min-height: 100vh;
   padding: 28px;
@@ -32,7 +32,7 @@ body {
   border-radius: 34px;
   background: rgba(255, 255, 255, 0.88);
   box-shadow: 0 24px 60px rgba(31, 31, 31, 0.1);
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(12px);
 }
 
 .brand {
