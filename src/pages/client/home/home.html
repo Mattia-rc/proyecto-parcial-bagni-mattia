@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store | Catálogo</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="./home.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="./home.html">
+      <span class="logo-icon">🍕</span>
+      Food Store
+    </a>
+
+    <nav class="nav">
+      <a href="./home.html">Catálogo</a>
+      <a href="../cart/cart.html" class="cart-link">
+        🛒 Carrito <span id="cartCount">0</span>
+      </a>
+      <button id="logoutButton" class="logout-button">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <span class="hero-badge">Delivery • Comida fresca • Compra rápida</span>
+      <h1>Elegí tus productos favoritos</h1>
+      <p>
+        Buscá, filtrá por categoría y armá tu carrito. La selección queda guardada
+        aunque cambies de página gracias a localStorage.
+      </p>
+      <a href="../cart/cart.html" class="hero-button">Ver carrito</a>
+    </div>
+  </section>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <h2>Categorías</h2>
+      <p class="sidebar-text">Filtrá el catálogo por tipo de comida.</p>
+      <div id="categoriesContainer" class="categories"></div>
+    </aside>
+
+    <section class="content">
+      <div class="content-header">
+        <div>
+          <h2>Catálogo</h2>
+          <p>Productos cargados dinámicamente desde TypeScript.</p>
+        </div>
+
+        <div class="search-wrapper">
+          <span>🔎</span>
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Buscar por nombre..."
+            autocomplete="off"
+          />
+        </div>
+      </div>
+
+      <p id="message" class="message"></p>
+
+      <div id="productsContainer" class="products-grid"></div>
+    </section>
+  </main>
+
+  <script type="module" src="./home.ts"></script>
+</body>
+</html>

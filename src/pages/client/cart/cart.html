@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Food Store | Carrito</title>
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link rel="stylesheet" href="./cart.css" />
+</head>
+<body>
+  <header class="header">
+    <a class="logo" href="../home/home.html">
+      <span class="logo-icon">🍕</span>
+      Food Store
+    </a>
+
+    <nav class="nav">
+      <a href="../home/home.html">Catálogo</a>
+      <a href="./cart.html" class="cart-link">🛒 Carrito</a>
+      <button id="logoutButton" class="logout-button">Cerrar sesión</button>
+    </nav>
+  </header>
+
+  <section class="cart-hero">
+    <div>
+      <span>Resumen de compra</span>
+      <h1>Tu carrito</h1>
+      <p>Revisá cantidades, subtotales y el total antes de finalizar tu selección.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <section id="cartContainer" class="cart-container"></section>
+
+    <aside class="summary">
+      <h2>Detalle</h2>
+      <p class="summary-text">El total se calcula automáticamente según precio y cantidad.</p>
+      <div class="total-box">
+        <span>Total</span>
+        <strong id="cartTotal">$0</strong>
+      </div>
+      <button id="clearCartButton" class="clear-button">Vaciar carrito</button>
+      <a href="../home/home.html" class="continue-link">Seguir comprando</a>
+    </aside>
+  </main>
+
+  <script type="module" src="./cart.ts"></script>
+</body>
+</html>
