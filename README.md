@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Food Store - Parcial Programación III
 
 Proyecto frontend desarrollado con HTML, CSS, JavaScript y TypeScript sobre Vite.
@@ -73,6 +72,3 @@ http://localhost:5173
 El proyecto usa CSS propio y URLs de imágenes externas para mejorar la presentación visual del catálogo, carrito e inicio de sesión.
 
 Si alguna imagen externa no carga por conexión a internet, la lógica del proyecto sigue funcionando correctamente.
-=======
-# proyecto-parcial-bagni-mattia
->>>>>>> 66409812f99b70e9daa2f2d633498b7d14eb72e2
